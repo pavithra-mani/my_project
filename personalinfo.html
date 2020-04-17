@@ -2,6 +2,8 @@
 <html>
   <head>
     <title> registration form! </title>
+    <meta name="viewport" content"width=device-width, initial-scale=1.0">
+
     <style>
       input[type=text] {
         background-color: red;
@@ -11,6 +13,9 @@
       }
       input[type=password]{
         background-color: green;
+      }
+      input[type=radio]{
+        background-color: springgreen;
       }
 
         button {
@@ -33,7 +38,23 @@
 @media print{
   .screen-only{display: none;
   }
+
 }
+@media(min-width: 500px){
+  body{background-color: lightgreen;}
+}
+@media(max-width:499px) {
+  h1::before{
+    content: "welcome!register here"
+
+  }
+}
+@media(min-width: 500px){
+  h1::before{
+    content: "welcome to my website. please register here "
+  }
+}
+
         </style>
   </head>
 
@@ -65,6 +86,15 @@ password?
 <p class="screen-only">this is a paragraph to show css selectors and also to make this site that is responsive</p>
 
  <button> hello there! hover over me for magic</button>
-
+ <div id="pets">
+   which is your favorite type of pet?
+<input name="pets" type="radio" value="dog">dog
+<input name="pets" type="radio" value="cat">cat
+<input name="pets" type="radio" value="goldfish">goldfish
+<input name="pets" type="radio" value="parakeet">parakeet
+<input name="pets" type="radio" value="clown fish"> clown fish
+<input name="pets" type="radio" value="pony">pony
+  </div>
+  
 </body>
 </html>
