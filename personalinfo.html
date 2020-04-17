@@ -30,11 +30,14 @@
           color: black;
           background-color: pink;
         }
-
+@media print{
+  .screen-only{display: none;
+  }
+}
         </style>
   </head>
 
-  <body align="center">
+  <body align="center" bgcolor="lightgrey">
 
      <h1>this is a registration form</h1>
     <form>
@@ -59,7 +62,7 @@ password?
   <li> <a href="list.html" > another link </a></li>
   <li> <a href="mywebpage.html" >  a third link</a></li>
 </ul>
-<p>this is a paragraph to show css selectors</p>
+<p class="screen-only">this is a paragraph to show css selectors and also to make this site that is responsive</p>
 
  <button> hello there! hover over me for magic</button>
 
